@@ -11,7 +11,7 @@ body{
 }
 .container{
     width: 1260px;
-    margin: auto;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
@@ -203,13 +203,18 @@ nav{
     justify-content: center;
     padding: 20px 0;
 }
+.top-news__item{
+    display: inline-block;
+    width: 33%;
+}
 .top-news__item .news-img{
-    width: 90%;
+    width: 93%;
 }
 .top-news__item p:hover{
     text-decoration:underline;
 }
 .top-news__item p{
+    width: 98%;
     padding: 10px 0;
     font-weight: bold;
     color: #000;
@@ -573,3 +578,322 @@ nav{
 .mobil-markets img{
     width: 100px;
 }
+.mini-menu{
+    display: none;
+}
+.mini-menu button{
+    border: none;
+    background-color: none;
+}
+.mini-menu img{
+    width: 30px;
+}
+.covid-st-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ********************************************Media query************************************ */
+
+@media(max-width: 1160px){
+    .container{
+        width: 1060px;
+    }
+    .mini-menu{
+        display: block;
+        padding-left: 20px;
+    }
+    .nav-left .nav-list{
+        display: none;
+    }
+    .navbar-lists{
+        display: none;
+    }
+    .ads-baner{
+        padding-top: 30px;
+    }
+    .mini-menu button{
+        background: none;
+    }
+}
+
+@media(max-width: 1060px){
+    .container{
+        width: 920px;
+    }
+    .covid-st__title{
+        width: 100%;
+    }
+    .covid-st{
+        display: block;
+    }
+    .covid-st__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+    .news-boxs-section{
+        display: block;
+    }
+    .news-box{
+        width: 100%;
+    }
+    .news-box__most-news{
+        padding-top: 50px;
+        display: flex;
+        width: 100%;
+    }
+    .new-box__most-news__section{
+        width: 50%;
+    }
+    .ads-section{
+        width: 50%;
+    }
+
+
+    
+}
+@media(max-width: 920px){
+    .container{
+        width: 820px;
+    }
+    .top-news__item{
+        width: 49%;
+    }
+    .line{
+        display: none;
+    }
+    
+}
+@media(max-width: 820px){
+    .container{
+        width: 720px;
+    }
+    .phone-img{
+        display: none;
+    }
+    .footer-top-section{
+        display: block;
+    }
+    .logo{
+        display: block;
+        text-align: center;
+    }
+    .my-tg{
+        display: inline-block;
+    }
+    .my-tg p{
+        padding: 20px 0;
+    }
+    .new-img img{
+        width: 100%;
+    }
+    .top-news__items{
+        flex-direction: column;
+    }
+    .top-news__item{
+        width: 100%;
+    }
+    .add-news{
+        flex-direction: column;
+        width: 100%;
+    }
+    .add-news-section{
+        width: 100%;
+    }
+    .contact-section{
+        width: 100%;
+    }
+    .add-news{
+        flex-direction: column;
+        width: 100%;
+    }
+    .add-news-section{
+        width: 100%;
+    }
+    .contact-section{
+        width: 100%;
+    }
+    .add-news__inputs input{
+        width: 100%;
+    }
+    .add-news__inputs textarea{
+        width: 100%;
+    }
+    .generation-code input{
+        width: 70%;
+        margin-right: none;
+    }
+    .generation-code span{
+        width: 30%;
+    }
+}
+@media(max-width: 720px){
+    .container{
+        width: 620px;
+    }
+    .nav-right .tg-text{
+        display: none;
+        padding: 0;
+    }
+    .news-box__most-news{
+        display: block;
+    }
+    .new-box__most-news__section{
+        width: 100%;
+    }
+    .ads-section{
+        width: 100%;
+    }
+    .text-section{
+        width: 100%;
+    }
+    .text-section p{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .download-app-section{
+        display: block;
+        text-align: center;
+    }
+    .news-box__item{
+        display: block;
+    }
+    .news-box__item__img img{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .content-items{
+        display: inline-block;
+    }
+    .content-item{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .top-news__item{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+@media(max-width: 620px){
+    .container{
+        width: 90%;
+    }
+    .navbar__top{
+        display: inline-block;
+    }
+    .nav-left .logo h1{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-right{
+        display: flex;
+    }
+    .footer-bottom-section{
+        display: inline-block;
+        text-align: center;
+    }
+    .covid-st-items{
+        display: inline-block;
+    }
+    .covid-infitsirovany{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .covid-died{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .covid-vyzdoroveli{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .footer-bottom-bio{
+        width: 100%;
+    }
+    .footer-nav{
+        width: 100%;
+    }
+    .covid-st{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-section .telegram-channer .follow-me a{
+        padding: 5px;
+    }
+    .nav-right .follow-me a{
+        padding: 15px 15px 10px 15px;
+        border-radius: 50%;
+    }
+    .tg-icon{
+        padding: 0;
+    }
+    .nav-right .follow-me{
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+    }
+    .nav-left{
+        flex-direction: column;
+    }
+    .logo{
+        
+    }
+    .navbar__top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .search{
+        display: none;
+    }
+    .lan{
+        display: none;
+    }
+    .ads-section img{
+        width: 100%;
+    }
+    .contact-section{
+        box-shadow: none;
+    }
+
+    .add-news__inputs button{
+        width: 100%;
+    }
+    .add-news__inputs .add-img{
+        width: 100%;
+    }
+    .email-address h4{
+        font-size: 15px;
+    }
+    .email-address h3{
+        font-size: 15px;
+    }
+    .social-address h3{
+        font-size: 15px;
+    }
+    .telegram-channer h3{
+        font-size: 15px;
+    }
+    .mobile-apps h3{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
